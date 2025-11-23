@@ -2379,9 +2379,9 @@ textarea.w-select {
 .mov_txt {
   -webkit-text-stroke: 1px #f8f8f8;
   text-shadow: 0px 1px 4px #23430c;
-  color: #fff;
+  color: #000;
   font-size: 60px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0 8px;
 }
 .valeround-400-16-24 {
@@ -2718,7 +2718,7 @@ textarea.w-select {
 .div-block-17 {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  background-color: #000;
+  background-color: #FFF;
   border: 2px solid #252525;
   border-radius: 57px;
   flex-flow: row;
@@ -2737,7 +2737,7 @@ textarea.w-select {
 }
 
 .paragraph {
-  color: #fff;
+  color: #000;
   margin-bottom: 0;
   font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
@@ -3688,7 +3688,7 @@ textarea.w-select {
 
 .code-embed {
   z-index: 101;
-  background-color: #ea2027;
+  background-color: #fff;
   border-top: 2px solid #3c84b5;
   border-bottom: 2px solid #3c84b5;
   justify-content: center;
@@ -3713,7 +3713,7 @@ textarea.w-select {
 
 .code-embed-copy {
   z-index: 100;
-  background-color: #eb2f06;
+  background-color: #ffffff;
   border-top: 2px solid #0d65b1;
   border-bottom: 2px solid #0d65b1;
   width: 130%;

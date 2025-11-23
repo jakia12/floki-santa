@@ -297,7 +297,7 @@
     /* NAVBAR CONTAINER */
     nav {
       width: 100%;
-      background: transparent;
+      background: #64b2fb;
       padding: 16px 24px;
       display: flex;
       justify-content: space-between;
@@ -321,6 +321,7 @@
     /* MENU */
     .menu {
       display: flex;
+      align-items: center;
       gap: 28px;
     }
 
@@ -395,6 +396,27 @@
 </head>
 
 <body class="body">
+  <nav>
+    <div class="logo">FLOKI SANTA</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu" id="menu">
+      <a href="/">Home</a>
+      <a href="#howtobuy">How To Buy</a>
+      <a href="tglink" target="_blank" class="link-block-2 w-inline-block"><img
+          src="https://cdn.prod.website-files.com/662744af798f9aabd49e8fca/6628e8602db66f8ea3430b00_Frame%2035411.svg"
+          loading="lazy" alt="image" class="image-47" /></a>
+      <a href="twitterlink" target="_blank" class="link-block-2 w-inline-block"><img
+          src="https://cdn.prod.website-files.com/662744af798f9aabd49e8fca/6628e86c350311f183a2574d_Frame%2035412.svg"
+          loading="lazy" alt="image" class="image-47" /></a>
+      <!-- <a href="dexslink">Dexscreener</a> -->
+    </div>
+  </nav>
   <section class="hero" style="
       ">
     <!-- Remember to also copy the code in the CSS area! -->
@@ -421,24 +443,9 @@
     </div>
     </div>
     <div class="w-layout-blockcontainer container w-container">
+
       <div class="parent-div">
-        <nav>
-          <div class="logo">FLOKI SANTA</div>
 
-          <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
-          <div class="menu" id="menu">
-            <a href="/">Home</a>
-            <a href="#howtobuy">How To Buy</a>
-            <a href="tglink">Telegram</a>
-            <a href="ttlink">Twitter</a>
-            <a href="dexslink">Dexscreener</a>
-          </div>
-        </nav>
         <!-- <div class="nav-only" style="padding-bottom: 5%;">
           <div class="div-block">
             <a href="/" aria-current="page" class="link-block w-inline-block w--current">
@@ -1578,7 +1585,9 @@
         <img src="/images/santa.png" loading="lazy" style="width: 100%; max-width: 300px"
           sizes="(max-width: 479px) 88vw, (max-width: 767px) 58vw, (max-width: 991px) 42vw, 382px" alt="image"
           class="left-img" />
-        <h2 class="heading">Contract address</h2>
+        <h2 class="" style="font-family: 'Poppins', sans-serif; color: white; font-size: 36px;
+  font-weight: 600;
+">CONTRACT ADDRESS</h2>
         <div class="html-embed-2 w-embed w-script">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
           <div class="copy-text">
@@ -1774,7 +1783,7 @@
             <div class="div-block-18">
               <img src="/images/MetaMask_Fox.svg.png" loading="lazy" alt="image" style="width: 77px" />
               <h2 class="heading-2">Set Up Your Wallet</h2>
-              <p class="valeround-400-16-24 clr--676767">
+              <p class="valeround-400-16-24 clr--676767" style="font-size: 19px; line-height: 24px;">
                 Before you can buy $HOHOHO, you&#x27;ll need a compatible
                 wallet. Download and install a cryptocurrency wallet such as
                 Metamask Wallet on your device.
@@ -1823,7 +1832,7 @@
               <h2 class="heading-2">
                 Connect Your Wallet to the BNB Network
               </h2>
-              <p class="valeround-400-16-24 clr--676767 mx-319">
+              <p class="valeround-400-16-24 clr--676767 mx-319" style="font-size: 19px; line-height: 24px;">
                 Open your wallet app and switch from the default network to
                 the BNB network.
               </p>
@@ -1845,7 +1854,7 @@
             <div class="div-block-18 width-460">
               <img src="/images/pancakeswap-cake-logo.png" loading="lazy" alt="image" style="width: 77px" />
               <h2 class="heading-2">Go to Pancakeswap</h2>
-              <p class="valeround-400-16-24 clr--676767 mx-318">
+              <p class="valeround-400-16-24 clr--676767 mx-318" style="font-size: 19px; line-height: 24px;">
                 Connect to pancakeswap. Paste the $HOHOHO token address into
                 pancakeswap and confirm the swap. When Metamask prompts
                 you for a wallet signature, sign.
@@ -1886,7 +1895,7 @@
             <div class="div-block-18 padding-24-34 width-460">
               <img src="/images/logo.png" style="width: 50px" alt="" />
               <h2 class="heading-2">Swap $HOHOHO</h2>
-              <p class="valeround-400-16-24 clr--676767 mx-321">
+              <p class="valeround-400-16-24 clr--676767 mx-321" style="font-size: 19px; line-height: 24px;">
                 Switch BNB for $HOHOHO. We have ZERO taxes so you don’t
                 need to worry about buying with a specific slippage
               </p>
@@ -1943,14 +1952,10 @@
       <div class="parent-div">
         <div class="div-block-26">
           <div class="div-block-27">
-            <a href="/" aria-current="page" class="link w--current">$HOHOHO</a>
-            <p class="minky">JOIN THE $HOHOHO COMMUNITY</p>
+            <a href="/" aria-current="page" class="link w--current"
+              style="font-family: 'Poppins, sans-serif;">$HOHOHO</a>
 
-            <div class="div-block-28" style="text-align: center;">
-              <a href="/" class="link-2">Home</a><a href="#Tokenomics" class="link-2"> TOKENOMICS</a><a
-                href="#How-to-buy" class="link-2">HOW TO BUY</a>
-              <!-- <a href="#faq" class="link-2">FAQ</a> -->
-            </div>
+
             <div class="social-links">
               <a href="tglink" target="_blank" class="link-block-2 w-inline-block"><img
                   src="https://cdn.prod.website-files.com/662744af798f9aabd49e8fca/6628e8602db66f8ea3430b00_Frame%2035411.svg"
