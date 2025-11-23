@@ -2718,7 +2718,7 @@ textarea.w-select {
 .div-block-17 {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #252525;
   border-radius: 57px;
   flex-flow: row;
@@ -3731,6 +3731,8 @@ textarea.w-select {
   width: 120%;
   position: absolute;
   left: -10px;
+  padding-top: 0;
+  padding-bottom: 10%;
 }
 
 .div-block-39 {
@@ -3888,7 +3890,7 @@ textarea.w-select {
   .content {
     grid-column-gap: 35px;
     grid-row-gap: 35px;
-    flex-flow: column-reverse wrap;
+    flex-flow: column wrap;
     justify-content: flex-end;
     align-items: center;
   }
@@ -4612,7 +4614,7 @@ textarea.w-select {
 
   .content {
     grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-row-gap: 144px;
   }
 
   .div-block-2 {
