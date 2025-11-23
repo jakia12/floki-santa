@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -2311,7 +2312,7 @@ textarea.w-select {
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -2344,6 +2345,7 @@ textarea.w-select {
   align-items: flex-start;
   width: 100%;
   display: flex;
+  padding-bottom: 16%;
 }
 
 .left {
@@ -2357,8 +2359,8 @@ textarea.w-select {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  width: 572px;
-  height: 351px;
+  width: 640px;
+  height: 500px;
   padding: 31px 60px 31px 50px;
   display: flex;
   position: relative;
@@ -2369,8 +2371,8 @@ textarea.w-select {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
-  font-size: 45px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 50px;
   font-weight: 900;
   line-height: 72px;
 }
@@ -2379,7 +2381,7 @@ textarea.w-select {
   text-shadow: 0px 1px 4px #23430c;
   color: #fff;
   font-size: 60px;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   padding: 0 8px;
 }
 .valeround-400-16-24 {
@@ -2387,10 +2389,10 @@ textarea.w-select {
   text-align: center;
   margin-top: 16px;
   margin-bottom: 0;
-  font-family: Varelaround, sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .valeround-400-16-24.clr--676767 {
@@ -2436,7 +2438,7 @@ textarea.w-select {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -2467,13 +2469,8 @@ textarea.w-select {
 }
 
 .contract {
-  background: linear-gradient(
-      rgba(168, 42, 42, 0.479),
-      rgba(182, 52, 52, 0.479)
-    ),
-    url("./images/bgg.jpg");
   z-index: 99;
-  background-color: #7ecbff;
+  background-color: #e55039;
   padding: 140px 16px 154px;
   position: relative;
 }
@@ -2486,7 +2483,7 @@ textarea.w-select {
   text-shadow: -1.63px 4px #4c4c4c;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 42px;
   font-weight: 900;
   line-height: 57px;
@@ -2506,6 +2503,21 @@ textarea.w-select {
   max-width: 512px;
   height: 654px;
   position: relative;
+}
+
+/* Tweet wrapper inside the hero/contract section */
+.tweet-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make the embedded tweet use full width of its column */
+.twitter-tweet {
+  margin: 0 auto !important;
+  max-width: 100% !important;
 }
 
 .image-32,
@@ -2651,7 +2663,7 @@ textarea.w-select {
   align-items: center;
   width: 150px;
   height: 48px;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 24px;
@@ -2683,7 +2695,7 @@ textarea.w-select {
   border-bottom-left-radius: 57px;
   height: 100%;
   padding-left: 19px;
-  font-family: Varelaround, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2727,7 +2739,7 @@ textarea.w-select {
 .paragraph {
   color: #fff;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -2804,7 +2816,7 @@ textarea.w-select {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   line-height: 38px;
 }
@@ -2911,7 +2923,7 @@ textarea.w-select {
   max-width: 879px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 64px;
   font-weight: 900;
   line-height: 76.4px;
@@ -2977,7 +2989,7 @@ textarea.w-select {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 41px;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 63px;
   font-weight: 400;
   line-height: 65px;
@@ -3142,7 +3154,7 @@ textarea.w-select {
   color: #252525;
   flex: 1;
   margin: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
@@ -3197,7 +3209,7 @@ textarea.w-select {
   color: #252525;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Varelaround, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -3245,7 +3257,7 @@ textarea.w-select {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #4c4c4c;
   text-shadow: -6px 12px 1px #141414;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 90px;
   font-weight: 400;
   line-height: 144px;
@@ -3253,7 +3265,7 @@ textarea.w-select {
 }
 
 .link.w--current {
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 900;
 }
 
@@ -3271,7 +3283,7 @@ textarea.w-select {
   text-shadow: -1.63px 2px 1px #141414;
   margin-top: 16px;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -3290,7 +3302,7 @@ textarea.w-select {
 
 .link-2 {
   color: #fff;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -3414,7 +3426,7 @@ textarea.w-select {
   -webkit-text-stroke-color: #4c4c4c;
   text-shadow: -8px 12px 1px #141414;
   margin-bottom: 0;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 80px;
   font-weight: 900;
   line-height: 120px;
@@ -5162,91 +5174,91 @@ textarea.w-select {
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f68d91cb1dc525f3f_Space Grotesk-Bold.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f68d91cb1dc525f3f_"LexendDeca"-Bold.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60c91cc7a39f0fdb14_Space Grotesk-Bold.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60c91cc7a39f0fdb14_"LexendDeca"-Bold.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f9817e0bbcf928ee8_Space Grotesk-Bold.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f9817e0bbcf928ee8_"LexendDeca"-Bold.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f20bd4f298670e681_Space Grotesk-Bold.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f20bd4f298670e681_"LexendDeca"-Bold.ttf")
       format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f4f7a8202d9d2c45f_Space Grotesk-Black.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f4f7a8202d9d2c45f_"LexendDeca"-Black.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f023057804efd11ca_Space Grotesk-Black.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f023057804efd11ca_"LexendDeca"-Black.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dee_Space Grotesk-Black.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dee_"LexendDeca"-Black.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fdfec789d97828212_Space Grotesk-Black.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fdfec789d97828212_"LexendDeca"-Black.ttf")
       format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fcf79487c6d5cc926_Space Grotesk-SemiBold.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fcf79487c6d5cc926_"LexendDeca"-SemiBold.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f68d91cb1dc525f4c_Space Grotesk-SemiBold.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f68d91cb1dc525f4c_"LexendDeca"-SemiBold.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60beab55128d61cc0b_Space Grotesk-SemiBold.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60beab55128d61cc0b_"LexendDeca"-SemiBold.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60f129a501e2880143_Space Grotesk-SemiBold.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60f129a501e2880143_"LexendDeca"-SemiBold.ttf")
       format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dfe_Space Grotesk-Medium.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dfe_"LexendDeca"-Medium.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dcb_Space Grotesk-Medium.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c608594ae917a152dcb_"LexendDeca"-Medium.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6096695bb40145e442_Space Grotesk-Medium.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6096695bb40145e442_"LexendDeca"-Medium.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f8594ae917a152d88_Space Grotesk-Medium.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5f8594ae917a152d88_"LexendDeca"-Medium.ttf")
       format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60a8fcecc7a0d4ab9b_Space Grotesk-Regular.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c60a8fcecc7a0d4ab9b_"LexendDeca"-Regular.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c61616cf983c99d65e6_Space Grotesk-Regular.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c61616cf983c99d65e6_"LexendDeca"-Regular.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6415c8306e643610d8_Space Grotesk-Regular.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6415c8306e643610d8_"LexendDeca"-Regular.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fc221d8b569e1134a_Space Grotesk-Regular.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c5fc221d8b569e1134a_"LexendDeca"-Regular.ttf")
       format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c61e535323a6ea5479a_Space Grotesk-Light.woff2")
+  font-family: "" Lexend Deca "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c61e535323a6ea5479a_"LexendDeca"-Light.woff2")
       format("woff2"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6059d8de110a854e1b_Space Grotesk-Light.eot")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6059d8de110a854e1b_"LexendDeca"-Light.eot")
       format("embedded-opentype"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6068d91cb1dc525fd8_Space Grotesk-Light.woff")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6068d91cb1dc525fd8_"LexendDeca"-Light.woff")
       format("woff"),
-    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6096695bb40145e3ca_Space Grotesk-Light.ttf")
+    url("https://assets.website-files.com/662744af798f9aabd49e8fca/662f1c6096695bb40145e3ca_"LexendDeca"-Light.ttf")
       format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "" Lexend Deca "";
   src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662757cd0889f2489ae14d9c_MilkyNice-Clean.ttf")
       format("truetype"),
     url("https://assets.website-files.com/662744af798f9aabd49e8fca/662757cd0889f2489ae14d9c_MilkyNice-Clean.ttf")
@@ -5266,8 +5278,8 @@ textarea.w-select {
   font-display: swap;
 }
 @font-face {
-  font-family: "Varelaround";
-  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/66275c38808ef9d3d37c774e_VarelaRound-Regular.ttf")
+  font-family: "" Poppins "";
+  src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/66275c38808ef9d3d37c774e_"Poppins"-Regular.ttf")
     format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -5284,7 +5296,7 @@ textarea.w-select {
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "" Lexend Deca "";
   src: url("https://assets.website-files.com/662744af798f9aabd49e8fca/662757ce78f226ce86cd50a7_MilkyNice-Clean.otf")
     format("opentype");
   font-weight: 500;
@@ -5298,4 +5310,26 @@ textarea.w-select {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+/* Desktop: make tweet + text two equal columns */
+@media screen and (min-width: 992px) {
+  .contract .content {
+    align-items: stretch; /* columns same height */
+  }
+
+  .contract .content .left,
+  .contract .content .div-block-3 {
+    flex: 1 1 0;
+    max-width: 50%;
+  }
+
+  .contract .div-block-3 {
+    margin-top: 0; /* remove big top gap on right column */
+  }
+
+  .contract .div-block-4 {
+    height: auto; /* let tweet define the height */
+    max-width: 100%;
+  }
 }

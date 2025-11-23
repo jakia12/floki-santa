@@ -292,14 +292,110 @@
     }
   </style>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    /* NAVBAR CONTAINER */
+    nav {
+      width: 100%;
+      background: transparent;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* border-bottom: 1px solid #eee; */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      margin-bottom: 2%;
+    }
+
+    /* LOGO */
+    .logo {
+      font-size: 25px;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 0.5px;
+      font-family: "Lexend Deca", sans-serif;
+    }
+
+    /* MENU */
+    .menu {
+      display: flex;
+      gap: 28px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: #333;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    /* MOBILE MENU */
+    @media (max-width: 768px) {
+      .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        display: none;
+      }
+
+      /* Show menu when active */
+      .menu.active {
+        display: flex;
+        animation: slideDown 0.3s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
   </style>
 </head>
 
 <body class="body">
   <section class="hero" style="
-        background-image: linear-gradient(#9c2c246b, #fe21196f),
-          url(/images/bg.jpg);
       ">
     <!-- Remember to also copy the code in the CSS area! -->
     <div class="snowflakes">
@@ -326,29 +422,41 @@
     </div>
     <div class="w-layout-blockcontainer container w-container">
       <div class="parent-div">
-        <div class="nav-only" style="padding-bottom: 5%;">
+        <nav>
+          <div class="logo">FLOKI SANTA</div>
+
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu" id="menu">
+            <a href="/">Home</a>
+            <a href="#howtobuy">How To Buy</a>
+            <a href="tglink">Telegram</a>
+            <a href="ttlink">Twitter</a>
+            <a href="dexslink">Dexscreener</a>
+          </div>
+        </nav>
+        <!-- <div class="nav-only" style="padding-bottom: 5%;">
           <div class="div-block">
             <a href="/" aria-current="page" class="link-block w-inline-block w--current">
-              <p class="paragraph-3">$SANTA</p>
+              <p class="paragraph-3">$HOHOHO</p>
             </a>
-            <!-- <a href="buylink" target="_blank" class="button w-button"
-                >BUY NOW</a
-              > -->
+            
           </div>
-        </div>
+        </div> -->
         <div class="content">
           <div class="left">
             <div class="div-block-4">
-              <img src="/images/logo.jpg" loading="lazy"
-                sizes="(max-width: 479px) 88vw, (max-width: 767px) 71vw, (max-width: 991px) 52vw, (max-width: 1279px) 41vw, 512px"
-                alt="image" class="image-59" style="
-                    max-width: 500px;
-                    height: auto;
-                    width: 100%;
-                    border-radius: 15px;
-                  " /><img
-                src="https://cdn.prod.website-files.com/662744af798f9aabd49e8fca/662b47dcf89fbabb627eb4eb_image_-_2024-04-22T003305_4-removebg-preview.png"
-                loading="lazy" alt="image" class="image-61" />
+              <blockquote class="twitter-tweet">
+                <p lang="is" dir="ltr">Floki Santa <a href="https://t.co/y3CTq16bGi">pic.twitter.com/y3CTq16bGi</a></p>
+                &mdash; Elon Musk (@elonmusk) <a
+                  href="https://twitter.com/elonmusk/status/1474860884359094275?ref_src=twsrc%5Etfw">December 25,
+                  2021</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
           <div class="div-block-3">
@@ -366,12 +474,43 @@
                 Santa Floki is here. <br>
                 The spirit of giving is now on-chain.
               </p>
-              <!-- <a href="twitterlink" target="_blank" class="button-2 w-button"
-                  >JOIN OUR COMMUNITY</a
-                > -->
+
             </div>
           </div>
         </div>
+        <!-- <div class="content">
+          <div class="left">
+            <div class="div-block-4 tweet-wrapper">
+             
+              <blockquote class="twitter-tweet">
+                <p lang="is" dir="ltr">Floki Santa <a href="https://t.co/y3CTq16bGi">pic.twitter.com/y3CTq16bGi</a></p>
+                &mdash; Elon Musk (@elonmusk) <a
+                  href="https://twitter.com/elonmusk/status/1474860884359094275?ref_src=twsrc%5Etfw">December 25,
+                  2021</a>
+              </blockquote>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+
+          <div class="div-block-3">
+            <div class="div-block-2">
+              <h1 class="h1">FLOKI SANTA</h1>
+              <p class="valeround-400-16-24 mx-453" style="text-align: left;">
+                FLOKI SANTA arrives. Born from the Elon Musk X post.
+                A meme with a mission — built to give, built to celebrate, built for the people. Every holder becomes
+                part of the legend.
+                <br>
+                Get ready for gifts. <br>
+                Get ready for surprises. <br>
+                Get ready for the holiday storm. <br>
+                <br>
+                Santa Floki is here. <br>
+                The spirit of giving is now on-chain.
+              </p>
+            </div>
+          </div>
+        </div> -->
+
       </div>
     </div>
     <div class="div-block-14 hide">
@@ -608,7 +747,7 @@
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>$SANTA</title>
+          <title>$HOHOHO</title>
           <style>
             .parent {
               margin: 0 auto;
@@ -703,67 +842,67 @@
             <div class="hero_slide">
               <div class="slider-content text-scroll">
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
               </div>
 
               <div class="slider-content text-scroll2">
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
                 <div>
-                  <h2 class="mov_txt">$SANTA</h2>
+                  <h2 class="mov_txt">$HOHOHO</h2>
                 </div>
               </div>
             </div>
@@ -779,7 +918,7 @@
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>$SANTA</title>
+          <title>$HOHOHO</title>
           <style>
             body {
               background-color: #e55039;
@@ -878,66 +1017,66 @@
               <div class="hero_slide">
                 <div class="slider-content text-scroll">
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                 </div>
                 <div class="slider-content text-scroll2">
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                   <div>
-                    <h2 class="mov_txt">$SANTA</h2>
+                    <h2 class="mov_txt">$HOHOHO</h2>
                   </div>
                 </div>
               </div>
@@ -1606,47 +1745,7 @@
       </div>
     </div>
   </section>
-  <section id="Tokenomics" class="section">
-    <div class="w-layout-blockcontainer container w-container">
-      <div class="parent-div">
-        <h2 class="h2">Tokenomics</h2>
-        <div class="div-block-19">
-          <!-- <div class="side-left"> -->
-          <div>
-            <blockquote class="twitter-tweet">
-              <p lang="is" dir="ltr">
-                Floki Santa
-                <a href="https://t.co/y3CTq16bGi">pic.twitter.com/y3CTq16bGi</a>
-              </p>
-              &mdash; Elon Musk (@elonmusk)
-              <a href="https://twitter.com/elonmusk/status/1474860884359094275?ref_src=twsrc%5Etfw">December 25,
-                2021</a>
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <!-- <h3 class="heading-3">$SANTA</h3> -->
-          </div>
-          <div class="side-right">
-            <div class="top-headings">
-              <h2 class="heading blue stroke-2">Supply Breakdown</h2>
-              <h2 class="heading-2 aling" style="font-weight: 600;">Total Supply: 1 Billion Token</h2>
-            </div>
-            <div class="div-block-22">
-              <div class="div-block-21">
-                <div class="div-block-20"></div>
-                <p class="valeround-400-16-24 tp-0 bordeer" style="font-weight: 600;">
-                  LIQUIDITY : BURNED
-                </p>
-              </div>
-              <div class="div-block-21">
-                <div class="div-block-20 clr--8dc6fa"></div>
-                <p class="valeround-400-16-24 tp-0 bordeer" style="font-weight: 600;">TAX : 0/0</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <section id="How-to-buy" class="roadmap">
     <!-- <img
         src="https://cdn.prod.website-files.com/662744af798f9aabd49e8fca/66289dbb492db1649e6f0fcc_Vector%201%20(2).png"
@@ -1661,12 +1760,12 @@
         alt="layer"
         class="image-41"
       /> -->
-    <div class="w-layout-blockcontainer container w-container">
+    <div id="howtobuy" class="w-layout-blockcontainer container w-container">
       <div class="parent-div gap-0">
         <div class="div-block-29">
           <h2 class="h2">HOW TO BUY?</h2>
           <div class="div-block-30">
-            <p class="paragraph-2">$SANTA is on</p>
+            <p class="paragraph-2">$HOHOHO is on</p>
             <img src="/images/bnb-bnb-logo.png" loading="lazy" alt="image" class="image-51" style="width: 60px" />
           </div>
         </div>
@@ -1676,7 +1775,7 @@
               <img src="/images/MetaMask_Fox.svg.png" loading="lazy" alt="image" style="width: 77px" />
               <h2 class="heading-2">Set Up Your Wallet</h2>
               <p class="valeround-400-16-24 clr--676767">
-                Before you can buy $SANTA, you&#x27;ll need a compatible
+                Before you can buy $HOHOHO, you&#x27;ll need a compatible
                 wallet. Download and install a cryptocurrency wallet such as
                 Metamask Wallet on your device.
               </p>
@@ -1747,7 +1846,7 @@
               <img src="/images/pancakeswap-cake-logo.png" loading="lazy" alt="image" style="width: 77px" />
               <h2 class="heading-2">Go to Pancakeswap</h2>
               <p class="valeround-400-16-24 clr--676767 mx-318">
-                Connect to pancakeswap. Paste the $SANTA token address into
+                Connect to pancakeswap. Paste the $HOHOHO token address into
                 pancakeswap and confirm the swap. When Metamask prompts
                 you for a wallet signature, sign.
               </p>
@@ -1786,9 +1885,9 @@
               loading="lazy" alt="lmage" class="hide" />
             <div class="div-block-18 padding-24-34 width-460">
               <img src="/images/logo.png" style="width: 50px" alt="" />
-              <h2 class="heading-2">Swap $SANTA</h2>
+              <h2 class="heading-2">Swap $HOHOHO</h2>
               <p class="valeround-400-16-24 clr--676767 mx-321">
-                Switch BNB for $SANTA. We have ZERO taxes so you don’t
+                Switch BNB for $HOHOHO. We have ZERO taxes so you don’t
                 need to worry about buying with a specific slippage
               </p>
             </div>
@@ -1819,7 +1918,7 @@
       <div class="w-layout-blockcontainer container w-container">
         <div class="parent-div relative">
           <h2 class="h2">
-            Dive into the $SANTA Community for a Wild Journey
+            Dive into the $HOHOHO Community for a Wild Journey
           </h2>
           <a href="tglink" target="_blank" class="button wid-160 w-button"
             >JOIN Now</a
@@ -1844,8 +1943,8 @@
       <div class="parent-div">
         <div class="div-block-26">
           <div class="div-block-27">
-            <a href="/" aria-current="page" class="link w--current">$SANTA</a>
-            <p class="minky">JOIN THE $SANTA COMMUNITY</p>
+            <a href="/" aria-current="page" class="link w--current">$HOHOHO</a>
+            <p class="minky">JOIN THE $HOHOHO COMMUNITY</p>
 
             <div class="div-block-28" style="text-align: center;">
               <a href="/" class="link-2">Home</a><a href="#Tokenomics" class="link-2"> TOKENOMICS</a><a
@@ -1916,6 +2015,13 @@
       });
     });
   </script>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('active')
+    }
+  </script>
+
 </body>
 
 </html>
